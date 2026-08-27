@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Portal SSC Padangsidimpuan</title> 
+    
+    <style>
+        /* Kunci body dan html agar tidak bisa di-scroll sama sekali */
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #f4f4f9;
+            overflow: hidden; /* Mencegah scroll di level parent */
+        }
+
+        .iframe-wrapper {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%; /* Gunakan 100% alih-alih vh untuk menghindari lompatan address bar */
+            /* Hapus overflow-y dan webkit-overflow-scrolling */
+        }
+
+        .iframe-container {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="iframe-wrapper">
+        <iframe 
+            class="iframe-container" 
+            src="https://script.google.com/macros/s/AKfycbw07tdnBlevS7xSLlhTOD1w1apKjTuvtHjPuYDBDjS02xGCuH65QUDP_wFuEa7Fv8i2iw/exec" 
+            allowfullscreen>
+        </iframe>
+    </div>
+</body>
+</html>
